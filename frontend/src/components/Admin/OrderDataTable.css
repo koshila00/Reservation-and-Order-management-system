@@ -1,0 +1,23 @@
+.table-custom {
+    background-color: #343a40; /* Dark background for the table */
+    color: #ffffff; /* White text color for better contrast */
+  }
+  
+  .table-custom thead th {
+    background-color: #82b9f3; /* Bootstrap primary color */
+    color: #000000; /* White text color for header */
+    font-weight: bold; /* Bold text for headers */
+  }
+  
+  .table-custom tbody tr:nth-of-type(even) {
+    background-color: #495057; /* Slightly lighter dark color for alternating rows */
+  }
+  
+  .table-custom tbody tr:hover {
+    background-color: #6c757d; /* Hover effect color */
+  }
+  
+  h3.text-primary {
+    color: #007bff; /* Bootstrap primary color for the title */
+  }
+  

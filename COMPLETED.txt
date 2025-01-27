@@ -1,0 +1,26 @@
+User Management
+*Login
+*SignUp
+*UpdateUser
+*GetOneUser
+*GetProfile
+*GetAllUsers
+*deleteUser
+ 
+
+Cafe Inventry Management
+
+*create Item(Image Upload part)
+*get all Item
+*get One Items
+*update specific Item
+*delete Item
+
+
+Hall Menu Package Management
+
+*Create Hall Menu(Image Upload)
+*get All Hall Menus
+*get One Hall Menu
+*Update Specific hall Menu
+*delete Hall Menu

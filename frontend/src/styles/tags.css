@@ -1,0 +1,38 @@
+.langBox {
+  background-color: #292a2a;
+  height: 120px;
+  min-width: 100px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.langIcon {
+  height: 70px;
+}
+
+.langName {
+  color: white;
+  margin-top: 5px;
+}
+
+.tagDiv {
+  text-align: center;
+}
+
+.tagList {
+  display: inline;
+  width: 100%;
+  margin-inline: 5px;
+}
+
+/* Logo Anim */
+.langAnim {
+  transform: scale(1);
+  transition: transform 350ms ease-in-out;
+  cursor: pointer;
+}
+
+.langAnim:hover {
+  transform: scale(1.1);
+  background-color: rgb(67, 67, 67);
+}

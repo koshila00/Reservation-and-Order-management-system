@@ -1,0 +1,161 @@
+.login-main {
+  background-color: rgb(251, 251, 251);
+  padding-top: 4.5rem;
+  padding-bottom: 3rem;
+  min-height: 100vh;
+}
+
+.login-container {
+  text-align: center;
+  width: 500px;
+}
+
+.register-container {
+  width: 700px;
+}
+
+.login-form {
+  text-align: left;
+  background-color: var(--white);
+  box-shadow: 0 3px 20px hsl(0deg 0% 40% / 15%);
+  border-radius: 10px;
+  margin: 0 auto 100px;
+  padding: 75px 35px;
+  margin-top: 40px;
+  font-family: var(--font-family-solid);
+}
+
+.login-lead {
+  color: var(--light-blue);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.form-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #718093;
+  margin-bottom: 6px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.form-control {
+  font-size: 0.9rem;
+  padding: 9px;
+  border-radius: 5px;
+}
+
+.signin-btn {
+  margin-bottom: 0px;
+  width: 100%;
+  padding: 9px;
+  font-family: var(--font-family-solid);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 2.5rem;
+  margin-top: 10px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.forgot-pwd-div {
+  text-align: right;
+}
+
+.signup-div {
+  text-align: center;
+}
+
+.signup-div a {
+  text-decoration: none;
+  color: var(--pink);
+}
+
+.invalid-feedback {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.forgot-pwd-div a:hover,
+.signup-div a:hover {
+  transition: all 250ms ease-in-out;
+  color: blue;
+  text-decoration-line: underline;
+}
+
+/* SELECT COUNTRY */
+.select-country {
+  font-size: 0.9rem;
+  font-family: var(--font-family-solid);
+  z-index: 5;
+  padding-top: 0.5px;
+}
+
+@media all and (min-width: 1201px) {
+}
+
+@media all and (max-width: 1200px) {
+}
+
+@media all and (max-width: 950px) {
+  .register::after {
+    background-color: var(--pink);
+  }
+
+  .register:hover::after {
+    color: var(--pink);
+  }
+
+  .register:hover {
+    color: var(--white);
+  }
+}
+
+@media all and (max-width: 580px) {
+  .register-container {
+    width: auto;
+  }
+
+  .country-input {
+    display: block;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .login-container {
+    width: auto;
+  }
+}
+
+.select-placeholder option {
+  color: black;
+  padding: 10px;
+  line-height: 2rem;
+}
+
+.select-placeholder {
+  color: rgb(110, 110, 110);
+  font-size: 0.9rem;
+  height: 41px;
+}
+
+.option {
+  color: black;
+}
+
+.red-border {
+  background-image: none;
+  border: 1px solid #dc3545;
+  background-image: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 12 12%27 width=%2712%27 height=%2712%27 fill=%27none%27 stroke=%27%23dc3545%27%3e%3ccircle cx=%276%27 cy=%276%27 r=%274.5%27/%3e%3cpath stroke-linejoin=%27round%27 d=%27M5.8 3.6h.4L6 6.5z%27/%3e%3ccircle cx=%276%27 cy=%278.2%27 r=%27.6%27 fill=%27%23dc3545%27 stroke=%27none%27/%3e%3c/svg%3e);
+}
+
+.alert {
+  text-align: center;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,36 @@
+.codeEditorMain {
+  display: flex;
+  flex-direction: row;
+}
+
+.codeEditorLeft {
+  flex: 1;
+  margin-right: 1.5px;
+}
+
+.codeEditorRight {
+  flex: 1;
+  margin-left: 1.5px;
+}
+
+.editorBtn {
+  text-align: left;
+}
+
+.codeOutput {
+  background-color: #2f2f2f;
+  height: 85vh;
+  color: rgb(190, 190, 190);
+  font-size: 1rem;
+  padding: 2% 4%;
+  text-align: left;
+  border: 1px solid #212121;
+}
+
+.codeAlert {
+  min-width: 500px;
+  position: absolute;
+  z-index: 999;
+  right: 2vw;
+  bottom: 10vh;
+}

@@ -1,0 +1,24 @@
+.askQuest {
+  display: flex;
+  justify-content: space-between;
+}
+
+.questCard {
+  margin-bottom: 0;
+  margin-top: 0;
+  border-radius: 0;
+  max-width: 800px;
+  width: auto;
+  padding: 3%;
+  border-left-style: none;
+  border-right-style: none;
+}
+
+.innerCard:hover {
+  background-color: white;
+}
+
+.questTop {
+  display: flex;
+  flex-direction: row;
+}

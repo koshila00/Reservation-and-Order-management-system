@@ -1,0 +1,230 @@
+:root {
+  --blue: #283d65;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #005c91;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --light-blue: #014b85;
+  --dark-blue: #ff8900;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  --font-family-para: "Comic Neue", Helvetica, Arial, sans-serif;
+  --font-family-solid: "Be Vietnam Pro", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.logo-header {
+  height: 45px;
+}
+
+.header-container {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.nav-links {
+  margin-right: 20px;
+  color: var(--blue);
+  transition: transform 150ms ease-in-out;
+  font-weight: 500;
+}
+
+.nav-links:hover {
+  color: var(--dark-blue);
+  transition: all 150ms ease-in-out;
+  transform: scale(1.1);
+}
+
+.header-btn {
+  border: 0;
+  padding: 1.2% 4%;
+  border-radius: 10px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.register {
+  background-color: var(--dark-blue);
+  position: relative;
+  transition: all 550ms ease-in-out;
+  z-index: 1;
+}
+
+.register::after {
+  content: "";
+  inset: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  border: 1px solid var(--pink);
+  z-index: -1;
+  border-radius: 10px;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 250ms ease-in-out;
+}
+
+.register:hover::after {
+  color: var(--pink);
+  transform: scaleX(1);
+}
+
+.register:hover {
+  color: var(--pink);
+  transition: all 550ms ease-in-out;
+}
+
+.login {
+  background-color: var(--white);
+  color: var(--pink);
+  border: 1px solid var(--pink);
+  position: relative;
+  transition: all 550ms ease-in-out;
+  z-index: 1;
+}
+
+.login::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--pink);
+  z-index: -1;
+  border: 1px solid var(--white);
+  border-radius: 10px;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 250ms ease-in-out;
+}
+
+.login:hover::after {
+  transform: scaleX(1);
+}
+
+.login:hover {
+  color: var(--white);
+  transition: all 550ms ease-in-out;
+}
+
+@media all and (max-width: 992px) {
+  .logo-header {
+    padding-left: 15px;
+    height: 40px;
+  }
+
+  .header-container {
+    padding-inline: 0%;
+    padding-top: 1%;
+  }
+
+  .header-btn {
+    display: none;
+  }
+
+  .nav-items {
+    padding-left: 20px;
+    margin-top: 1.5rem;
+    padding-bottom: 40px;
+    padding-top: 15px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 5px 20px rgb(117, 117, 117);
+  }
+
+  .nav-links {
+    margin: 2% 0%;
+    font-weight: 500;
+    font-size: 0.9rem;
+    position: relative;
+    padding-left: 10px;
+  }
+
+  .nav-links:hover {
+    transform: scale(1);
+  }
+
+  .nav-links::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--pink);
+    width: 96%;
+    height: 1px;
+    top: 100%;
+  }
+
+  .toggle-btn {
+    border-color: var(--pink);
+    font-size: 1.5rem;
+  }
+
+  .toggle-btn:focus {
+    box-shadow: none;
+  }
+
+  .toggle-btn .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(251, 36, 106' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+  .toggle-btn .navbar-toggler {
+    border-color: var(--pink);
+  }
+}
+
+.nav-bar {
+  transition: all 200ms ease-in-out;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  transition: all 200ms ease-in-out;
+  background-color: var(--white);
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  z-index: 10;
+  box-shadow: 1px 5px 10px rgba(162, 162, 162, 0.4);
+  transition: all 200ms ease-in-out;
+}
+
+.dropdown-menu {
+  transition: height 5s ease-in-out;
+  height: 0;
+  overflow: hidden;
+}
+
+.dropdown-menu.show {
+  height: auto;
+}

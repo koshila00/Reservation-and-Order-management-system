@@ -1,0 +1,36 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const cafe_inventory_routes_1 = __importDefault(require("./routes/cafe_inventory_routes"));
+const cafe_order_item_route_1 = __importDefault(require("./routes/cafe_order_item_route"));
+// import CafeOrderItemRouter from "./routes/cafe_order_item_route";
+const cafe_order_route_1 = __importDefault(require("./routes/cafe_order_route"));
+const cafe_review_route_1 = __importDefault(require("./routes/cafe_review_route"));
+const discount_route_1 = __importDefault(require("./routes/discount_route"));
+const hall_booking_routes_1 = __importDefault(require("./routes/hall_booking_routes"));
+const hall_inventory_route_1 = __importDefault(require("./routes/hall_inventory_route"));
+const hall_menu_package_item_route_1 = __importDefault(require("./routes/hall_menu_package_item_route"));
+const hall_menu_package_route_1 = __importDefault(require("./routes/hall_menu_package_route"));
+const hall_type_route_1 = __importDefault(require("./routes/hall_type_route"));
+const quotation_routes_1 = __importDefault(require("./routes/quotation_routes"));
+const suppliyer_route_1 = __importDefault(require("./routes/suppliyer_route"));
+const user_router_1 = __importDefault(require("./routes/user_router"));
+const constants_1 = __importDefault(require("./utills/constants"));
+const requestMappings = (app) => {
+    app.use(constants_1.default.API.PREFIX.concat("/user"), user_router_1.default);
+    app.use(constants_1.default.API.PREFIX.concat("/cafeitem"), cafe_inventory_routes_1.default);
+    app.use(constants_1.default.API.PREFIX.concat("/cafereview"), cafe_review_route_1.default);
+    app.use(constants_1.default.API.PREFIX.concat("/cafeorder"), cafe_order_route_1.default);
+    app.use(constants_1.default.API.PREFIX.concat("/cafeorderitem"), cafe_order_item_route_1.default);
+    app.use(constants_1.default.API.PREFIX.concat("/discount"), discount_route_1.default);
+    app.use(constants_1.default.API.PREFIX.concat("/hallmenu"), hall_menu_package_route_1.default);
+    app.use(constants_1.default.API.PREFIX.concat("/hallinventory"), hall_inventory_route_1.default);
+    app.use(constants_1.default.API.PREFIX.concat("/hallmenupackageitem"), hall_menu_package_item_route_1.default);
+    app.use(constants_1.default.API.PREFIX.concat("/halltype"), hall_type_route_1.default);
+    app.use(constants_1.default.API.PREFIX.concat("/hallbooking"), hall_booking_routes_1.default);
+    app.use(constants_1.default.API.PREFIX.concat("/suppliyer"), suppliyer_route_1.default);
+    app.use(constants_1.default.API.PREFIX.concat("/quotation"), quotation_routes_1.default);
+};
+exports.default = requestMappings;
